@@ -1,0 +1,109 @@
+.main{
+    padding: 0.5rem;
+}
+
+.seccion{
+    padding: 1rem 2rem;
+}
+
+.introduccion{
+    display: flex;
+    padding: 1rem;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(175, 138, 138, 0.2);
+    border: 2px solid rgba(175, 138, 138, 0.2);
+    border-radius: 10px;
+}
+.info-1, .info-2{
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.info-2{
+    line-height: 150%;
+}
+
+.imagen > img{
+    width: 35rem;
+}
+
+.trabajos, .proyectos{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background: #121212;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.50);
+}
+
+.trabajos-1, .proyectos-1{
+    padding: 1rem;
+}
+
+.trabajos-2, .proyectos-2{
+    padding: 1rem 1rem;
+}
+
+.actividad{
+    background-color: #202020;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.50);
+}
+.actividad-title, .actividad-description{
+    padding: 1rem;
+}
+.actividad-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.actividad:hover{
+    scale: 1.03;
+    transition-property: scale;
+    transition-duration: .5s;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@media (max-width:1000px){
+    .imagen>img{
+        width: 25rem;
+    }
+    .info-1{
+        font-size: 0.8rem;
+    }
+    .info-2{
+        font-size: 0.7rem;
+    }
+    .actividad-title{
+        font-size: 1rem;
+    }
+    .actividad-description{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 799px){
+    .introduccion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-1, .info-2{
+        text-align: center;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 499px) {
+    .imagen>img{
+        width: 20rem;
+    }
+}

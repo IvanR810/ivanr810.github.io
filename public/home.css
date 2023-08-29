@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --width-height: 3rem;
+}
+
+body{
+    color: aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+    background: #121212;
+    cursor: default;
+}
+
+.body-1{
+    position: sticky;
+    top: 0;
+}
+
+.bar{
+    z-index: 2;
+    display: flex;
+    padding: 1.2rem 0;
+    height: var(--width-height);
+    background: #121212;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.50);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar-title{
+    padding: 0rem 2rem;
+}
+
+.bar-icon{
+    visibility: hidden;
+    cursor: pointer;
+    padding: 0 2rem;
+}
+
+.bar-icon > img{
+    width: 2rem;
+}
+.bar-options{
+    visibility: visible;
+}
+
+.bar-options > ul{
+    z-index: 1;
+    display: flex;
+    list-style: none;
+    padding: 0 2rem;
+}
+.oculto{
+    visibility: visible;
+}
+
+.visible{
+    visibility: visible;
+}
+
+.link{
+    padding: 1rem 2.5rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.link:hover{
+    background-color: #181818;
+}
+
+
+
+@media(max-width: 710px) {
+    .link{
+        margin: 0.05rem;
+    }
+}
+
+@media(max-width:700px){
+    .oculto{
+        visibility: hidden;
+    }
+    
+    .bar-icon{
+        visibility: visible;
+    }
+
+    .bar-options{
+        background-color: #151515;
+        border-radius: 0.3rem;
+        position: fixed;
+        right: 0;
+        top: calc(var(--width-height) + 2.4rem);
+    }
+    .bar-options > ul{
+        display: block;
+        list-style: none;
+        padding: 0.5rem;
+    }
+}
+
